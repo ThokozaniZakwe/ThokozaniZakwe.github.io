@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&family=Roboto:wght@100;400;700&family=Ubuntu+Condensed&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: 'Roboto Slab', 'Ubuntu Condensed', sans-serif;
+    background-color: #f172a1;
+}
+
+/* Navbar Styles */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.navbar>.nav-brand{
+    margin-top: 30px;
+}
+
+.navbar>.nav-brand>.nav-link{
+    font-size: 2.8rem;
+    margin-left: 60px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar>.nav-menu>ul{
+    display: flex;
+    list-style-type: none;
+}
+
+.navbar>.nav-menu .nav-link{
+    color: #fff;
+    font-size: 1.6rem;
+    text-align: center;
+    padding: 25px 0;
+    width: 150px;
+    border-left: 1px solid #abcabc;
+    display: block;
+}
+
+.navbar>.nav-menu>ul>li:first-child>.nav-link{
+    border-left: none;
+}
+
+.navbar>.nav-menu .nav-link:hover,
+.navbar>.nav-menu .nav-link:active,
+.navbar>.nav-menu .nav-link:focus{
+    background-color: #a1c3d1;
+    color: #e63398;
+}
+
+.navbar>.nav-brand>.nav-link:hover{
+    color: #e63398;
+}
