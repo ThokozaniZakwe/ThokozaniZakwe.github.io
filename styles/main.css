@@ -41,6 +41,7 @@ body{
     width: 150px;
     border-left: 1px solid #abcabc;
     display: block;
+    transition: 0.4s background-color linear;
 }
 
 .navbar>.nav-menu>ul>li:first-child>.nav-link{
