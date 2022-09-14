@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&family=Roboto:wght@100;400;700&family=Ubuntu+Condensed&display=swap');
 
+html{
+    scroll-behavior: smooth;
+}
+
 *{
     box-sizing: border-box;
 }
@@ -65,4 +69,49 @@ body{
 
 .navbar>.nav-brand>.nav-link:hover{
     color: #e63398;
+}
+
+/* Home Page Section */
+#main{
+    display: flex;
+    justify-content: space-around;
+}
+
+#main>section#profile-image{
+    position: relative;
+    margin-top: 40px;
+    width: 300px;
+    height: 300px;
+    padding: 50px;
+    border-radius: 50%;
+    border: 5px solid #a1c3d1;
+    background-color: #b39bc8;
+    overflow: hidden;
+    box-shadow: 10px 10px 5px -10px rgba(0,0,0,0.75) inset;
+}
+
+#main>section#profile-image>img{
+    position: absolute;
+    bottom: -50px;
+    text-align: center;
+}
+
+#main>section.home-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2.8rem;
+    color: #fff;
+}
+
+#main>section.home-text>h1>span{
+    color: #cdcdcd;
+}
+
+#main>section.home-text>h1:last-child{
+    margin-top: 0;
+}
+
+#main>section.home-text>h1:first-child{
+    margin-bottom: 0;
 }
