@@ -115,3 +115,23 @@ body{
 #main>section.home-text>h1:first-child{
     margin-bottom: 0;
 }
+
+.btn-talk{
+    text-decoration: none;
+    border: 2px solid #fff;
+    color: #fff;
+    /* background-color: #0072ae; */
+    padding: 25px 50px;
+    display: block;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 22px;
+    font-weight: bold;
+    transition: all .25 ease-in-out;
+    background: linear-gradient(to bottom, #33d3ff, #0071ae, 76%, #0071ae 76%);
+}
+
+.btn-talk:hover, .btn-talk:focus{
+    border-color: #0072ae;
+    background: none;
+}
