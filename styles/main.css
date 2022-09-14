@@ -49,10 +49,18 @@ body{
 }
 
 .navbar>.nav-menu .nav-link:hover,
-.navbar>.nav-menu .nav-link:active,
-.navbar>.nav-menu .nav-link:focus{
+.navbar>.nav-menu .nav-link:active{
     background-color: #a1c3d1;
     color: #e63398;
+}
+
+.navbar .nav-link:focus{
+    outline: none;
+    color: #e63398;
+}
+
+.navbar>.nav-menu .nav-link.active{
+    color: #d52287;
 }
 
 .navbar>.nav-brand>.nav-link:hover{
