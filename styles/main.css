@@ -183,4 +183,13 @@ body{
         right: 30px;
         cursor: pointer;
     }
+
+    main#main{
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+    }
+    #main>section.home-text{
+        font-size: 2.4rem;
+    }
 }
