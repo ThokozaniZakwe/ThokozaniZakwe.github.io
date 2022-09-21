@@ -190,6 +190,9 @@ body{
         align-items: center;
     }
     #main>section.home-text{
+        margin-left: 10%;
+        margin-right: auto;
         font-size: 2.4rem;
+        text-align: center;
     }
 }
