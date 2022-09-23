@@ -12,6 +12,7 @@ body{
     margin: 0;
     font-family: 'Roboto Slab', 'Ubuntu Condensed', sans-serif;
     background-color: #f172a1;
+    position: relative;
 }
 
 /* Navbar Styles */
@@ -149,6 +150,7 @@ body{
     background: url('../images/background3.jpg');
     background-size: cover;
     background-attachment: fixed;
+    width: 100vw;
 }
 
 .skills h1{
@@ -210,6 +212,34 @@ body{
     color: #e63398;
     transform: rotateY(180deg);
 
+}
+
+/* Button To Top Styles */
+.button-to-top{
+    position: fixed;
+    color: #121212;
+    font-size: 2.2rem;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #cdcdcd;
+    background-color: #abcabc;
+    text-align: center;
+    border-radius: 50%;
+    right: 40px;
+    bottom: 90px;
+    opacity: 0.8;
+    padding: 10px;
+    /* margin: auto; */
+    transition: transform 1s ease-in-out;
+    box-shadow: 0px 0px 6px 4px rgba(0,0,0,0.75);
+}
+
+.button-to-top>a{
+    text-decoration: none;
+}
+
+.button-to-top:hover i{
+    transform: scale(1.4);
 }
 
 /* Media Queries */
@@ -278,5 +308,12 @@ body{
 
     .skills>.skills-content{
         grid-template-columns: 1fr 1fr;
+        gap: 12px;
+        margin-bottom: 22px;
+    }
+
+    .card-container{
+        width: 170px;
+        height: 313px;
     }
 }
