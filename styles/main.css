@@ -142,6 +142,76 @@ body{
     color: black;
 }
 
+/* Skills Section */
+.skills{
+    margin-top: 120px;
+    border-top: 3px solid #fff;
+    background: url('../images/background3.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.skills h1{
+    font-size: 3.2rem;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.skills>.skills-content>.card-container>.card-container-content>.card-front{
+    width: 100%;
+    font-size: 4.2rem;
+    color: #fff;
+    background-color: #f172a1;
+}
+
+.skills>.skills-content{
+    border-radius: 3px;
+    box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, .09);
+    /* width: 1200px; */
+    padding: 21px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 42px;
+    margin-bottom: 42px;
+}
+
+.card-container{
+    width: 270px;
+    height: 413px;
+}
+
+.card-container-content{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.9s;
+    transform-style: preserve-3d;
+}
+
+.card-container:hover .card-container-content{
+    transform: rotateY(180deg);
+}
+
+.card-front, .card-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card-back{
+    background-color: #cdcdcd;
+    color: #e63398;
+    transform: rotateY(180deg);
+
+}
+
 /* Media Queries */
 @media screen and (max-width: 990px) {
     .navbar{
@@ -152,14 +222,17 @@ body{
     .navbar>.nav-brand{
         margin-left: -40px;
     }
+    .navbar>.nav-brand>.nav-link{
+        font-size: 2.2rem;
+    }
 
     .navbar>.nav-menu>ul{
+        position: relative;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         max-height: 0;
         overflow: hidden;
-        /* display: none; */
     }
 
     .navbar>.nav-menu>ul>.nav-item{
@@ -184,15 +257,26 @@ body{
         cursor: pointer;
     }
 
+    .navbar>.nav-menu>.active{
+        position: absolute;
+        top: 180px;
+        right: 25px;
+        overflow: visible;
+    }
+
     main#main{
         flex-direction: column;
-        /* justify-content: center; */
         align-items: center;
     }
     #main>section.home-text{
         margin-left: 10%;
-        margin-right: auto;
+        margin-right: 10%;
+        min-width: 620px;
         font-size: 2.4rem;
         text-align: center;
+    }
+
+    .skills>.skills-content{
+        grid-template-columns: 1fr 1fr;
     }
 }
