@@ -2,6 +2,7 @@
 
 html{
     scroll-behavior: smooth;
+    /* overflow: hidden; */
 }
 
 *{
@@ -13,6 +14,7 @@ body{
     font-family: 'Roboto Slab', 'Ubuntu Condensed', sans-serif;
     background-color: #f172a1;
     position: relative;
+    overflow-x: hidden;
 }
 
 /* Navbar Styles */
@@ -20,6 +22,7 @@ body{
     display: flex;
     justify-content: space-between;
     color: #fff;
+    width: 100vw;
 }
 
 .navbar>.nav-brand{
@@ -77,12 +80,14 @@ body{
 }
 
 /* Home Page Section */
-#main{
+.main{
     display: flex;
     justify-content: space-around;
+    padding-bottom: 125px;
+    width: 100vw;
 }
 
-#main>section#profile-image{
+.main>section#profile-image{
     position: relative;
     margin-top: 40px;
     width: 300px;
@@ -95,13 +100,13 @@ body{
     box-shadow: 10px 10px 5px -10px rgba(0,0,0,0.75) inset;
 }
 
-#main>section#profile-image>img{
+.main>section#profile-image>img{
     position: absolute;
     bottom: -50px;
     text-align: center;
 }
 
-#main>section.home-text{
+.main>section.home-text{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -109,43 +114,22 @@ body{
     color: #fff;
 }
 
-#main>section.home-text>h1>span{
+.main>section.home-text>h1>span{
     color: #cdcdcd;
 }
 
-#main>section.home-text>h1:last-child{
+.main>section.home-text>h1:last-child{
     margin-top: -10px;
 }
 
-#main>section.home-text>h1:first-child{
+.main>section.home-text>h1:first-child{
     margin-bottom: -65px;
     margin-left: -50px;
 }
 
-.btn-talk{
-    text-decoration: none;
-    border: 2px solid #fff;
-    color: #fff;
-    padding: 25px 50px;
-    display: block;
-    text-align: center;
-    border-radius: 10px;
-    font-size: 22px;
-    font-weight: bold;
-    transition: all .25 ease-in-out;
-    background: linear-gradient(to bottom, #33d3ff, #b39bc8, 76%, #b39bc8 76%);
-    /* transition: background-color 0.15s linear; */
-}
-
-.btn-talk:hover, .btn-talk:focus{
-    border-color: #cdcdcd;
-    background: #33d3ff;
-    color: black;
-}
-
 /* Skills Section */
 .skills{
-    margin-top: 120px;
+    /* margin-top: 120px; */
     border-top: 3px solid #fff;
     background: url('../images/background3.jpg');
     background-size: cover;
@@ -170,7 +154,7 @@ body{
 .skills>.skills-content{
     border-radius: 3px;
     box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, .09);
-    width: 100vw;
+    /* width: 100vw; */
     padding: 21px;
     margin-right: 30px;
     display: grid;
@@ -243,8 +227,31 @@ body{
     transform: scale(1.4);
 }
 
+/* Contact Section Styles */
+
+.contact{
+    border-top: 2px solid #fff;
+    padding-top: 60px;
+}
+
+.contact>h1{
+    font-size: 2.8rem;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 60px;
+}
+
+
 /* Media Queries */
 @media screen and (max-width: 990px) {
+    html{
+        border: 1px solid black;
+    }
+
+    body{
+        border: 1px solid blue;
+    }
+
     .navbar{
         justify-content: space-between;
         position: relative;
@@ -295,11 +302,13 @@ body{
         overflow: visible;
     }
 
-    main#main{
+    main.main{
         flex-direction: column;
         align-items: center;
+        justify-content: center;
     }
-    #main>section.home-text{
+
+    .main>section.home-text{
         margin-left: 10%;
         margin-right: 10%;
         min-width: 620px;

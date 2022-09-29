@@ -1,0 +1,39 @@
+.btn-talk{
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+    width: 220px;
+    height: 45px;
+    padding: 8px;
+    font-size: 1.2rem;
+    border: 1px solid #0275d8;
+    outline: none;
+    background-color: #fff;
+    color: #0275d8;
+}
+
+.btn-talk:hover, .btn-talk:focus{
+    background-color: #0275d8;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+
+form>.form-group>.form-btn{
+    margin-left: 220px;
+    width: 520px;
+    height: 40px;
+    font-size: 1.2rem;
+    border: 1px solid #0275d8;
+    outline: none;
+    background-color: #fff;
+    color: #0275d8;
+}
+
+form>.form-group>.form-btn:hover, 
+form>.form-group>.form-btn:focus,
+form>.form-group>.form-btn:active{
+    background-color: #0275d8;
+    border: 1px solid #fff;
+    color: #fff;
+}

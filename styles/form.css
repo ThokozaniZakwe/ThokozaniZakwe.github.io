@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+}
+
+form>.form-group{
+    margin-bottom: 35px;
+}
+
+form>.form-group>label{
+    font-size: 1.6rem;
+    display: inline-block;
+    width: 220px;
+}
+
+form>.form-group:last-child>label{
+    vertical-align: top;
+}
+
+form>.form-group>input.form-control{
+    width: 520px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+}
+
+form>.form-group>textarea.form-control{
+    width: 520px;
+    border-radius: 5px;
+    border: none;
+}
+
+form>.form-group>.form-control{
+    font-size: 1.2rem;
+}
+
+form>.form-group>.form-control:focus{
+    outline: none;
+    border: 3px solid #5bc0de;
+}

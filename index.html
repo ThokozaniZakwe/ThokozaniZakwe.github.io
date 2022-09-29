@@ -7,6 +7,8 @@
     <title>Thokozani Zakwe</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/buttons.css">
 </head>
 <body>
     <nav class="navbar" id="navbar">
@@ -16,18 +18,19 @@
             <ul class="active">
                 <li class="nav-item"><a href="#main" class="nav-link"><i class="fa-solid fa-home"></i></a></li>
                 <li class="nav-item"><a href="#skills" class="nav-link"><i class="fa-solid fa-screwdriver-wrench"></i></a></li>
-                <li class="nav-item"><a href="#" class="nav-link"><i class="fa-solid fa-envelope"></i></a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link"><i class="fa-solid fa-envelope"></i></a></li>
                 <li class="nav-item"><a href="#" class="nav-link"><i class="fa-solid fa-user"></i></a></li>
             </ul>
         </div>
     </nav>
-    <main id="main">
+    <main id="main" class="main">
         <section id="profile-image">
             <img src="images/image1.png" alt="Profile Picture">
         </section>
         <section class="home-text">
             <h1>Hi, I'm <span>Thokozani Zakwe</span></h1>
             <h1>I'm a <span>Full-Stack Developer</span></h1>
+            <!-- <a class="form-btn" href="mailto:tezakwe@gmail.com">Let's Talk</a> -->
             <a class="btn-talk" href="mailto:tezakwe@gmail.com">Let's Talk</a>
         </section>
     </main>
@@ -102,10 +105,35 @@
             </div>
         </div>
     </section>
-
-    <div class="button-to-top">
-        <a href="#navbar"><i class="fa-solid fa-chevron-up"></i></a>
-    </div>
+    <section class="contact" id="contact">
+        <h1>Get In Touch</h1>
+        <form>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input class="form-control" type="text" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input class="form-control" type="email" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="subject">Subject</label>
+                <input class="form-control" type="text" id="subject" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control" id="messsage" rows="6" required></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="form-btn">Send <i class="fa-solid fa-share-from-square"></i></button>
+            </div>
+        </form>
+        <div class="contact-media">
+            <div class="facebook"><i class="fa-brands fa-facebook"></i></div>
+            <div class="twitter"><i class="fa-brands fa-twitter"></i></div>
+            <div class="twitter"><i class="fa-brands fa-github"></i></div>
+        </div>
+    </section>
 
     <script src="scripts/main.js"></script>
 </body>
