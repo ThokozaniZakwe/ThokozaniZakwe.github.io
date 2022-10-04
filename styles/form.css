@@ -60,6 +60,12 @@ form>.form-group>.form-control:focus{
     display: block;
     text-decoration: none;
     color: #fff;
+    transition: transform 0.5s ease-in-out;
+}
+
+.contact>.form-media>.contact-media>a:hover{
+    transform: scale(1.2);
+    color: #5bc0de;
 }
 
 @media screen and (max-width: 640px) {
@@ -67,6 +73,7 @@ form>.form-group>.form-control:focus{
         margin-left: 20px;
         margin-right: 20px;
     }
+
     .contact>.form-media{
         flex-direction: column;
     }
@@ -74,6 +81,7 @@ form>.form-group>.form-control:focus{
     .contact>.form-media>.contact-media{
         margin: 30px auto;
     }
+
     .contact>.form-media>.contact-media>a{
         display: inline-block;
         margin-right: 50px;
