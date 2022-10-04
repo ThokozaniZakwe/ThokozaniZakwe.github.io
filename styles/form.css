@@ -2,6 +2,11 @@
     box-sizing: border-box;
 }
 
+.contact>.form-media{
+    display: flex;
+    justify-content: space-around;
+}
+
 form{
     display: flex;
     flex-direction: column;
@@ -19,7 +24,7 @@ form>.form-group>label{
     width: 220px;
 }
 
-form>.form-group:last-child>label{
+form>.form-group:nth-child(4)>label{
     vertical-align: top;
 }
 
@@ -43,4 +48,34 @@ form>.form-group>.form-control{
 form>.form-group>.form-control:focus{
     outline: none;
     border: 3px solid #5bc0de;
+}
+
+.contact>.form-media>.contact-media{
+    margin: 30px;
+    font-size: 2.8rem;
+}
+
+.contact>.form-media>.contact-media>a{
+    margin: 40px 10px;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+}
+
+@media screen and (max-width: 640px) {
+    form{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .contact>.form-media{
+        flex-direction: column;
+    }
+
+    .contact>.form-media>.contact-media{
+        margin: 30px auto;
+    }
+    .contact>.form-media>.contact-media>a{
+        display: inline-block;
+        margin-right: 50px;
+    }
 }

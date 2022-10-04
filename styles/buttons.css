@@ -37,3 +37,16 @@ form>.form-group>.form-btn:active{
     border: 1px solid #fff;
     color: #fff;
 }
+
+@media screen and (max-width: 640px) {
+    form>.form-group>.form-btn{
+        margin-left: -75px;
+        width: 520px;
+        height: 40px;
+        font-size: 1rem;
+        border: 1px solid #0275d8;
+        outline: none;
+        background-color: #fff;
+        color: #0275d8;
+    }
+}
